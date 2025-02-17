@@ -1,206 +1,75 @@
-<html lang="kr">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="og:site_name" content="WAS 였다" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>WAS 였다</title>
-<link rel="stylesheet" href="main01.css">
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script>
-          $(document).ready(function(){
-            $(".slider").css({"border":"1px solid #f00"});
-          });
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="자연 속 감성을 담은 스킨케어와 바디케어 블로그 - 코스워커">
+    <meta name="keywords" content="스킨케어, 바디케어, 자연, 향기, 스몰 럭셔리">
+    <meta name="author" content="Cosworker">
+    <meta property="og:title" content="코스워커 블로그">
+    <meta property="og:description" content="스킨케어와 바디케어의 최신 트렌드와 자연 속 감성을 담은 콘텐츠">
+    <meta property="og:image" content="/images/og-image.jpg">
+    <meta property="og:url" content="https://www.cosworker.com">
+    <title>코스워커 블로그 - 스킨케어와 바디케어 이야기</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Cosworker Blog</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#skincare">스킨케어</a></li>
+                <li><a href="#bodycare">바디케어</a></li>
+                <li><a href="#fragrance">향기</a></li>
+                <li><a href="#lifestyle">라이프스타일</a></li>
+                <li><a href="#about">소개</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <style>
-          body {
-              font-family: 'Arial', sans-serif;
-              margin: 0;
-              padding: 0;
-              background-color: #f5f5f5;
-          }
+    <main class="main">
+        <section class="hero">
+            <h1>자연 속 감성을 담은 스킨케어 & 바디케어</h1>
+            <p>코스워커와 함께하는 특별한 일상, 향과 텍스처로 스몰 럭셔리를 경험해보세요.</p>
+        </section>
 
-          header {
-              background-color: #333;
-              color: white;
-              text-align: center;
-              padding: 1em;
-          }
+        <section class="featured-posts">
+            <h2>추천 포스트</h2>
+            <div class="post-grid">
+                <div class="post">
+                    <img src="/images/skincare-trend.jpg" alt="스킨케어 트렌드">
+                    <h3>2025 스킨케어 트렌드</h3>
+                    <p>자연 성분과 클린 뷰티가 대세! 스킨케어 트렌드에 대해 알아보세요.</p>
+                    <a href="20250218.html" class="read-more">더 읽기</a>
+                </div>
+                <div class="post">
+                    <img src="/images/bodycare-texture.jpg" alt="바디케어 텍스처">
+                    <h3>바디케어, 텍스처로 느끼는 특별함</h3>
+                    <p>향과 텍스처로 일상에 소소한 즐거움을 선사하는 바디케어 팁.</p>
+                    <a href="#" class="read-more">더 읽기</a>
+                </div>
+                <div class="post">
+                    <img src="/images/fragrance-journey.jpg" alt="향기 여정">
+                    <h3>자연 속 향기 여행</h3>
+                    <p>숲, 바다, 꽃밭… 자연이 주는 향의 마법을 경험해보세요.</p>
+                    <a href="#" class="read-more">더 읽기</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-          nav {
-              display: flex;
-              justify-content: space-around;
-              background-color: #444;
-              padding: 0.5em;
-          }
-
-          nav a {
-              color: white;
-              text-decoration: none;
-              padding: 0.5em 1em;
-              border-radius: 4px;
-              transition: background-color 0.3s ease;
-          }
-
-          nav a:hover {
-              background-color: #555;
-          }
-
-          main {
-              max-width: 800px;
-              margin: 20px auto;
-              padding: 20px;
-              background-color: white;
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          }
-
-          article {
-              margin-bottom: 20px;
-          }
-
-          footer {
-              text-align: center;
-              padding: 1em;
-              background-color: #333;
-              color: white;
-          }
-          #slider {
-           overflow: hidden;
-           width: 80%;
-           margin: auto;
-       }
-
-       #slides {
-           display: flex;
-           transition: transform 0.5s ease-in-out;
-       }
-
-       .slide {
-           width: 100%;
-           flex: 0 0 auto;
-       }
-      </style>
-      <script>
-        $(document).ready(function () {
-            var currentSlide = 0;
-            var totalSlides = $('.slide').length;
-
-            function showSlide(index) {
-                if (index < 0) {
-                    currentSlide = totalSlides - 1;
-                } else if (index >= totalSlides) {
-                    currentSlide = 0;
-                } else {
-                    currentSlide = index;
-                }
-
-                var newPosition = -currentSlide * 100 + '%';
-                $('#slides').css('transform', 'translateX(' + newPosition + ')');
-            }
-
-            $('.next').on('click', function () {
-                showSlide(currentSlide + 1);
-            });
-
-            $('.prev').on('click', function () {
-                showSlide(currentSlide - 1);
-            });
-        });
-    </script>
-  </head>
-
-  <body>
-
-      <header>
-          <h1>WAS 였다.</h1>
-      </header>
-
-      <nav>
-          <a href="#">홈</a>
-          <a href="#">포스트</a>
-          <a href="#">소개</a>
-          <a href="#">연락처</a>
-      </nav>
-
-      <main>
-          <article>
-              <h2>CPM이 높아졌다는 것은</h2>
-              <p>타겟팅 개선
-
-CPM을 낮추기 위한 가장 효과적인 방법 중 하나는 타겟팅을 개선하는 것입니다. 타겟팅이 잘못되면 관심 없는 사람들에게 광고가 노출될 가능성이 높아집니다. 따라서 광고의 목표 고객을 명확히 파악하고, 해당 고객에게만 광고를 노출할 수 있도록 타겟팅을 세밀하게 조정해야 합니다.
-
-타겟팅을 개선하기 위해서는 다음과 같은 방법을 고려할 수 있습니다.
-
-인구통계학적 타겟팅: 연령, 성별, 거주지, 관심사 등 인구통계학적 정보를 기반으로 타겟팅합니다.
-행동적 타겟팅: 웹사이트 방문 기록, 앱 사용 기록, 검색 기록 등 사용자의 행동 정보를 기반으로 타겟팅합니다.
-관심사 타겟팅: 사용자의 관심사를 기반으로 타겟팅합니다.
-입찰 전략 수정
-
-입찰 전략은 CPM에 직접적인 영향을 미칩니다. 입찰 전략을 조정하여 CPM을 낮출 수 있습니다.
-
-입찰 전략을 수정하기 위해서는 다음과 같은 방법을 고려할 수 있습니다.
-
-최소 입찰가 설정: 최소 입찰가를 낮추면 CPM이 낮아질 수 있습니다.
-입찰 상한 설정: 입찰 상한을 높이면 CPM이 높아질 수 있습니다.
-입찰 전략 자동화: 자동 입찰 전략을 사용하면 CPM을 최적화할 수 있습니다.
-광고 크리에이티브 개선
-
-광고 크리에이티브가 관심을 끌지 못하면 클릭률이 낮아지고 CPM이 높아질 수 있습니다. 따라서 광고 크리에이티브를 개선하여 관심을 끌고 클릭률을 높이는 것이 중요합니다.
-
-광고 크리에이티브를 개선하기 위해서는 다음과 같은 방법을 고려할 수 있습니다.
-
-광고 내용을 명확하고 간결하게 작성합니다.
-광고 이미지나 동영상을 활용하여 시각적인 효과를 높입니다.
-CTA(Call to Action)를 명확하게 표시합니다.
-CPM이 높아졌다면 다음과 같은 조치를 취하는 것이 좋습니다.
-
-CPM이 왜 높아졌는지 원인을 파악합니다.
-CPM이 높아진 원인을 파악하려면 광고 플랫폼에서 제공하는 데이터를 분석해야 합니다. 데이터를 분석하여 타겟팅, 입찰 전략, 크리에이티브 등에서 문제가 있는지 파악합니다.
-
-CPM을 낮추기 위한 방법을 검토합니다.
-원인을 파악한 후 CPM을 낮추기 위한 방법을 검토합니다. 타겟팅을 개선하거나 입찰 전략을 수정하거나 광고 크리에이티브를 개선하는 등의 방법을 고려합니다.
-
-필요한 경우 광고 전략을 수정합니다.
-CPM을 낮추기 위한 조치를 취해도 효과가 없다면 광고 전략을 전면적으로 수정해야 할 수도 있습니다. 타겟 고객을 변경하거나 광고 목표를 변경하는 등의 방법을 고려합니다.
-
-CPM을 낮추기 위해서는 광고의 목표와 상황에 맞는 적절한 조치를 취하는 것이 중요합니다. 타겟팅, 입찰 전략, 크리에이티브 등 다양한 요소를 고려하여 종합적인 접근이 필요합니다.</p>
-          </article>
-
-          <article>
-              <h2>두 번째 포스트</h2>
-              <p>모두에게 동등하게 주어진 시간의 흐름에서 나의 30년과 31년은 보다 불확실함이 컸던 것 같아.
-                 그때의 나는, 마음 속 찌릿함들이 걱정스런 흔들림이 아니라 앞으로 만나게 될 그 어떤 순간과의 만남에 대한 떨림 쪽이
-                 더 컸던 것 같아. 이끌려가는 배 위의 울렁거림이 아니라 파도의 흐름을 느끼고 가로지르며 가는 서퍼의 박진감과 설레임이 될
-                 수 있도록, 옆에서 나의 역할을 해볼게. 언제나. 걱정하지말고. 사랑해.
-
-                
-
-              </p>
-          </article>
-          <div id="slider">
-      <div id="slides">
-          <div class="slide"><img src="image1.jpg" alt="Slide 1"></div>
-          <div class="slide"><img src="image2.jpg" alt="Slide 2"></div>
-          <div class="slide"><img src="image3.jpg" alt="Slide 3"></div>
-          <!-- 추가적인 슬라이드들을 필요에 따라 추가하세요. -->
-      </div>
-  </div>
-
-  <button class="prev">이전</button>
-  <button class="next">다음</button>
-
-      </main>
-
-      <footer>
-          <p>&copy; 2024 WAS. All rights reserved.</p>
-      </footer>
-
-  </body>
-
-  </html>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Cosworker. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
